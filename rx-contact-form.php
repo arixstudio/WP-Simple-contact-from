@@ -190,6 +190,7 @@ function rx_contact_form_settings_menu() {
 add_action( 'admin_init', 'rx_contact_form_register_settings' );
 function rx_contact_form_register_settings() {
     register_setting( 'rx_contact_form_settings', 'rx_contact_form_email' );
+    register_setting( 'rx_contact_form_settings', 'rx_contact_form_custom_css', 'sanitize_textarea_field' );
 }
 
 // Define the settings page
@@ -208,12 +209,27 @@ function rx_contact_form_settings_page() {
                         <p class="description"><?php _e( 'Enter the email address where you want to receive contact form submissions.', 'rx-contact-form' ); ?></p>
                     </td>
                 </tr>
+                <tr>
+                    <th scope="row"><?php _e( 'Custom CSS', 'rx-contact-form' ); ?></th>
+                    <td>
+                        <textarea class="large-text" name="rx_contact_form_custom_css"><?php echo esc_textarea( get_option( 'rx_contact_form_custom_css' ) ); ?></textarea>
+                        <p class="description"><?php _e( 'Enter your custom CSS code here.', 'rx-contact-form' ); ?></p>
+                    </td>
+                </tr>
             </table>
             <?php submit_button(); ?>
         </form>
     </div>
     <?php
 }
+
+function rx_contact_form_custom_css() {
+    $custom_css = get_option( 'rx_contact_form_custom_css' );
+    if ( ! empty( $custom_css ) ) {
+        echo '<style>' . $custom_css . '</style>';
+    }
+}
+add_action( 'wp_head', 'rx_contact_form_custom_css' );
 
 // Add the plugin settings link to the plugins page
 add_filter( 'plugin_action_links_' .__FILE__, 'rx_contact_form_settings_link' );
