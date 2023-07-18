@@ -1,6 +1,4 @@
-Sure, here's an updated sample README file for the Simple Contact Form WordPress plugin with a change log section:
-
-# Simple Contact Form WordPress Plugin
+# A Simple Wordpress Contact Form Plugin
 
 This is a simple WordPress plugin that adds a contact form to your website. The plugin is easy to use and customize, and it includes the following features:
 
