@@ -1,0 +1,43 @@
+#rx-contact-form {
+    max-width: 400px;
+}
+
+#rx-contact-form input,
+#rx-contact-form textarea {
+    background-color: transparent;
+    border-radius: 0;
+    border-width: 0 0 1px 0;
+    border-color: #717171;
+    color: #ababab;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+#rx-contact-form input:focus,
+#rx-contact-form textarea:focus {
+    box-shadow: none;
+    border-color: #fff;
+}
+
+#rx-contact-form .btn {
+    border: none;
+    width: 120px;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+#rx-contact-form .btn img {
+    width: 15px;
+}
+
+.alert-danger {
+    color: #dc3545!important;
+    background-color: #424242b8!important;
+    border-color: #717171!important;
+}
+
+.alert-success {
+    color: #198754!important;
+    background-color: #424242b8!important;
+    border-color: #717171!important;
+}

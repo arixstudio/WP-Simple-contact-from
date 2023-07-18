@@ -1,0 +1,97 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Rx Contact Form\n"
+"POT-Creation-Date: 2023-06-02 22:11+0330\n"
+"PO-Revision-Date: 2023-06-02 22:13+0330\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: fa_IR\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n==0 || n==1);\n"
+"X-Generator: Poedit 2.2\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-Flags-xgettext: --add-comments=translators:\n"
+"X-Poedit-WPHeader: rx-contact-form.php\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
+"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;"
+"_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.js\n"
+
+#: rx-contact-form.php:52
+msgid "Name"
+msgstr "نام"
+
+#: rx-contact-form.php:53
+msgid "Please enter your name."
+msgstr "لطفاً نام کامل تان را وارد نمایید."
+
+#: rx-contact-form.php:56
+msgid "Email"
+msgstr "ایمیل"
+
+#: rx-contact-form.php:57
+msgid "Please enter a valid email address."
+msgstr "لطفاً یک ایمیل معتبر وارد نمایید."
+
+#: rx-contact-form.php:60
+msgid "Message"
+msgstr "متن پیام"
+
+#: rx-contact-form.php:61
+msgid "Please enter your message."
+msgstr "لطفاً پیام تان را وارد نمایید."
+
+#: rx-contact-form.php:77
+msgid "Nonce verification failed."
+msgstr "نشست منقضی شده. لطفاً صفحه را مجدداً برگزاری نمایید."
+
+#: rx-contact-form.php:157
+#, php-format
+msgid "New contact form submission from %s"
+msgstr "پیام دریافت شده از %s"
+
+#: rx-contact-form.php:168
+msgid "Thank you for your message!"
+msgstr "متشکریم، پیام شما دریافت شد."
+
+#: rx-contact-form.php:170
+msgid "Oops, something went wrong. Please try again later."
+msgstr "متاسفانه در این لحظه امکان ثبت پیام وجود ندارد. لطفاً بعداً سعی نمایید."
+
+#: rx-contact-form.php:180 rx-contact-form.php:198
+msgid "Rx Contact Form Settings"
+msgstr "تنظیمات فرم تماس"
+
+#. Plugin Name of the plugin/theme
+#: rx-contact-form.php:181
+msgid "Rx Contact Form"
+msgstr "فرم تماس"
+
+#: rx-contact-form.php:204
+msgid "Email Address"
+msgstr "ایمیل گیرنده پیام"
+
+#: rx-contact-form.php:207
+msgid ""
+"Enter the email address where you want to receive contact form submissions."
+msgstr ""
+
+#: rx-contact-form.php:220
+msgid "Settings"
+msgstr "تنظیمات"
+
+#. Description of the plugin/theme
+msgid "A simple contact form plugin for WordPress."
+msgstr ""
+
+#. Author of the plugin/theme
+msgid "arixstudio"
+msgstr ""
+
+#. Author URI of the plugin/theme
+msgid "https://arixstudio.com/"
+msgstr ""
