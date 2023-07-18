@@ -25,6 +25,7 @@ add_action('init', 'rx_contact_init');
 add_action( 'wp_enqueue_scripts', 'rx_contact_form_enqueue_scripts' );
 function rx_contact_form_enqueue_scripts() {
     wp_enqueue_style( 'rx-contact-form', RX_CONTACT_FORM_URL . 'css/rx-contact-form.css');
+    wp_enqueue_style( 'bootstrap-style', RX_CONTACT_FORM_URL . 'css/bootstrap.min.css');
     wp_enqueue_script( 'rx-contact-form', RX_CONTACT_FORM_URL . 'js/rx-contact-form.js', array( 'jquery' ), '1.0.0', true );
     
     // Define the AJAX URL and nonce
@@ -61,7 +62,7 @@ function rx_contact_form_shortcode() {
             <div class="invalid-feedback"><?php _e( 'Please enter your message.', 'rx-contact-form' ); ?></div>
         </div>
         <?php wp_nonce_field( 'rx_contact_form_submit', 'rx_contact_form_nonce' ); ?>
-        <button type="submit" class="btn btn-primary"><img src="<?php echo RX_CONTACT_FORM_URL.'/img/arrow.svg' ?>"></button>
+        <button type="submit" class="btn btn-secondary"><img src="<?php echo RX_CONTACT_FORM_URL.'/img/arrow.svg' ?>"></button>
     </form>
     <?php
     return ob_get_clean();
