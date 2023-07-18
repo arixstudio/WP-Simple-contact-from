@@ -24,6 +24,8 @@ To add the contact form to a page or post, simply add the `[rx_contact_form]` sh
 
 The Simple Contact Form WordPress Plugin can be customized using CSS styles. To add custom CSS styles to the form, go to the Settings > Simple Contact Form page in the WordPress dashboard and add your styles to the "Custom CSS" field.
 
+Also you can set the recipient email address as well.
+
 ## Change Log
 
 ### Version 1.0.0
